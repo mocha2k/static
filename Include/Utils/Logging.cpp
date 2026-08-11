@@ -1,5 +1,5 @@
 /*
- *	Copyright 2026-2027 static - hiro
+ *	Copyright 2026-2027 static - mocha
  *
  *	Use of this source code without explicit permission from owner is strictly prohibited.
  */

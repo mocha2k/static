@@ -3,7 +3,7 @@
 from pathlib import Path
 
 HEADER = """/*
- *\tCopyright 2026-2027 static - hiro
+ *\tCopyright 2026-2027 static - mocha
  *
  *\tUse of this source code without explicit permission from owner is strictly prohibited.
  */
@@ -34,7 +34,7 @@ for file in ROOT.rglob("*"):
 
     text = file.read_text(encoding="utf-8", errors="ignore")
 
-    if "Copyright 2026-2027 static - hiro" in text:
+    if "Copyright 2026-2027 static - mocha" in text:
         skipped += 1
         continue
 
