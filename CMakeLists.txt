@@ -39,7 +39,6 @@ target_include_directories(stb_vorbis PUBLIC third_party/stb)
 
 add_library(static STATIC
     Include/Base/Audio.cpp
-    Include/Base/Camera.cpp
     Include/Base/GameObject.cpp
     Include/Base/Text.cpp
     Include/EventHandler.cpp
