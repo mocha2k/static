@@ -85,6 +85,7 @@ void main()
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
 		glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_COMPAT_PROFILE);
+		glfwWindowHint(GLFW_SAMPLES, 0);
 
 		m_Window = glfwCreateWindow(width, height, std::string(title).c_str(), nullptr, nullptr);
 		if (m_Window == nullptr)
@@ -110,6 +111,9 @@ void main()
 		}
 
 		glDisable(GL_DEPTH_TEST);
+		glDisable(GL_MULTISAMPLE);
+		glDisable(GL_LINE_SMOOTH);
+		glDisable(GL_POLYGON_SMOOTH);
 		glEnable(GL_BLEND);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
