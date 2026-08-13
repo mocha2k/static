@@ -68,9 +68,6 @@ void main()
 
 	void Renderer::FramebufferSizeCallback(GLFWwindow* window, int width, int height)
 	{
-		auto* self = static_cast<Renderer*>(glfwGetWindowUserPointer(window));
-		self->m_Width = width;
-		self->m_Height = height;
 		glViewport(0, 0, width, height);
 	}
 
